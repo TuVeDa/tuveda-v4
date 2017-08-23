@@ -18,13 +18,13 @@ class Navbar extends Component {
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-            <a className="navbar-brand" href="#">Tuveda</a>
+            <a href="#" className="navbar-brand" onClick={this.props.routeToLanding} >Tuveda</a>
           </div>
 
           {/* Collect the nav links, forms, and other content for toggling */}
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul className="nav navbar-nav navbar-right">
-              <li><a href="#" className="words">Blog</a></li>
+              <li><a href="#" className="words" onClick={this.props.routeToBlog}>Blog</a></li>
             </ul>
           </div>{/* /.navbar-collapse */}
         </div>
