@@ -37,9 +37,9 @@ class ProjectPreview extends Component {
 
   render() {
     return (
-      <div className="std-land-section">
+      <div className='std-land-section'>
 
-        <div className={this.state.active ? 'projectRow-hidden' : 'row'}>
+        <div className={this.state.active ? 'projectRow-hidden' : 'projectRow row'}>
           <h3 className='land-title'>PROJECTS</h3>
 
           <ProjectTile

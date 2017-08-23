@@ -16,36 +16,40 @@ class Drawer extends Component {
   render() {
     return (
       <div className={this.state.active ? 'drawerActive' : 'drawerInactive'}>
-        {/* <div className='drawer'> */}
-          <div className='row '>
-            <h3 className='drawer-title'>{this.state.title}</h3>
+        <h3 className='drawer-title'>{this.state.title}</h3>
+        <div className='row '>
+          <img className='drawer-pic col-sm-4' src={this.state.img} alt={this.state.selection}/>
 
-            <img className='project-pic col-sm-4' src={this.state.img} alt={this.state.selection}/>
+          <div className='col-sm-8'>
+            <p className="drawer-des">
+              Gummies croissant ice cream gingerbread soufflé. Danish topping apple pie I love jelly beans chocolate bar chocolate cake powder.
+              Sesame snaps pudding jelly beans cupcake carrot cake marzipan I love marshmallow chocolate bar.
 
-            <div className='col-sm-8'>
-              <p className="drawer-des">
-                Gummies croissant ice cream gingerbread soufflé. Danish topping apple pie I love jelly beans chocolate bar chocolate cake powder.
-                Sesame snaps pudding jelly beans cupcake carrot cake marzipan I love marshmallow chocolate bar.
+              <br /><br />
 
-                <br /><br />
+              Jelly cheesecake biscuit jelly halvah. Caramels I love cotton candy. Sesame snaps tart cake tart.
+              Cotton candy macaroon lollipop I love cotton candy powder candy canes. I love I love bonbon oat cake.
+              Sweet roll chocolate cake I love gummies I love dragée chupa chups I love. Jelly-o icing toffee jelly pastry I love.
 
-                Jelly cheesecake biscuit jelly halvah. Caramels I love cotton candy. Sesame snaps tart cake tart.
-                Cotton candy macaroon lollipop I love cotton candy powder candy canes. I love I love bonbon oat cake.
-                Sweet roll chocolate cake I love gummies I love dragée chupa chups I love. Jelly-o icing toffee jelly pastry I love.
+              <br /><br />
 
-                <br /><br />
+              Sweet roll chocolate cake I love gummies I love dragée chupa chups I love. Jelly-o icing toffee jelly pastry I love.
+            </p>
 
-                Sweet roll chocolate cake I love gummies I love dragée chupa chups I love. Jelly-o icing toffee jelly pastry I love.
-              </p>
+            <br />
 
-              <br />
-
-              <button className='row' onClick={() => this.props.shutDrawer()}>
-                  I EXIST MUTHAFUCKAS
-              </button>
-            </div>
+            <button className='row' onClick={() => this.props.shutDrawer()}>
+                I EXIST MUTHAFUCKAS
+            </button>
           </div>
-        {/* </div> */}
+        </div>
+        <div className='row'>
+          <h4 className='drawer-subtitle'>Technologies Used</h4>
+          <img className='drawer-tech-icon' src={this.state.img} alt='tech-icon'/>
+          <img className='drawer-tech-icon' src={this.state.img} alt='tech-icon'/>
+          <img className='drawer-tech-icon' src={this.state.img} alt='tech-icon'/>
+          <img className='drawer-tech-icon' src={this.state.img} alt='tech-icon'/>
+        </div>
       </div>
     )
   }

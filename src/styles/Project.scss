@@ -1,4 +1,4 @@
-@import 'Variables';
+@import 'Variables.scss';
 
 .project {
   margin-top: 2em;
@@ -21,7 +21,7 @@
 
 //-----DRAWER-------
 .drawerActive {
-  display: block;
+  min-height: 50em;
 }
 
 .drawerInactive {
@@ -29,16 +29,28 @@
 }
 
 .drawer-pic {
-  width: 20em;
-  height: 20em;
+  padding-left: 3em;
+  width: 25em;
+  height: 25em;
 }
 
 .drawer-title {
-  font-size: 1.825;
-  margin-top: 1em;
-  color: green;
+  font-size: 5em;
+  color: black;
+  text-transform: uppercase;
 }
 
 .drawer-des {
-  font-size: 1.5;
+  margin-top: 1em;
+  font-size: 1.5em;
+}
+
+.drawer-subtitle {
+  font-size: 1.875em;
+}
+
+.drawer-tech-icon {
+  width: 10em;
+  height: 10em;
+  margin: 0 1em;
 }
