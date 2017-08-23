@@ -1,3 +1,36 @@
+.project {
+  margin-top: 2em;
+  display: block; }
+
+.projectRow-hidden {
+  display: none; }
+
+.project-title {
+  font-size: 1.5em;
+  margin-top: 1em; }
+
+.project-pic {
+  width: 20em;
+  height: 20em; }
+
+.drawerActive {
+  display: block; }
+
+.drawerInactive {
+  display: none; }
+
+.drawer-pic {
+  width: 20em;
+  height: 20em; }
+
+.drawer-title {
+  font-size: 1.825;
+  margin-top: 1em;
+  color: green; }
+
+.drawer-des {
+  font-size: 1.5; }
+
 .App {
   min-height: 100vh;
   display: flex;
@@ -63,17 +96,6 @@
     width: 5em; }
   #contact-form .input {
     width: 25em; }
-
-.project {
-  margin-top: 2em; }
-
-.project-title {
-  font-size: 1.5em;
-  margin-top: 1em; }
-
-.project-pic {
-  width: 20em;
-  height: 20em; }
 
 #blog-preview {
   background-color: #D1D1D1; }

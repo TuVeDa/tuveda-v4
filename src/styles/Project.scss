@@ -1,0 +1,44 @@
+@import 'Variables';
+
+.project {
+  margin-top: 2em;
+  display: block;
+}
+
+.projectRow-hidden{
+  display: none;
+}
+
+.project-title {
+  font-size: $sub-title-font-size;
+  margin-top: 1em;
+}
+
+.project-pic {
+  width: 20em;
+  height: 20em;
+}
+
+//-----DRAWER-------
+.drawerActive {
+  display: block;
+}
+
+.drawerInactive {
+  display: none;
+}
+
+.drawer-pic {
+  width: 20em;
+  height: 20em;
+}
+
+.drawer-title {
+  font-size: 1.825;
+  margin-top: 1em;
+  color: green;
+}
+
+.drawer-des {
+  font-size: 1.5;
+}
